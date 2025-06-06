@@ -34,40 +34,40 @@
     Real-time collaboration is enabled using Socket.IO, which ensures that document changes made by one user are immediately reflected in all active clients viewing the same document
 
 # Key Features
-    ## Rich Text Editing
+  ## Rich Text Editing
         The editor supports formatting options such as bold, italic, underline, headers, lists, code blocks, and links. 
         
         These features are enabled using Quill’s toolbar modules and extended with custom formats if needed. This functionality ensures that users can create well-structured and visually appealing documents.
 
-    ## Real-Time Collaboration
+  ## Real-Time Collaboration
         Using WebSockets (via Socket.IO), the application synchronizes content changes across multiple users editing the same document.
         
         Each edit operation is emitted to the server and then broadcasted to other clients.
         
         This low-latency communication model allows for a smooth collaborative experience, mimicking the behavior of Google Docs.
 
-    ## Tabbed Interface
+  ## Tabbed Interface
         To improve multitasking and usability, the application allows users to open multiple documents in a tabbed layout. Each tab corresponds to a separate document instance.
         
         This design mirrors desktop applications like code editors and browsers, improving productivity and user comfort.
 
-    ## Document Management
+  ## Document Management
         Users can create, rename, delete, and switch between documents. A list view displays all saved documents from the MongoDB database. 
         
         Advanced filtering by tags, categories, or search input is also considered in the design to make navigation more efficient, especially when the number of documents increases.
 
-    ## Manual Save & Auto-Save Options
+  ## Manual Save & Auto-Save Options
         Although real-time synchronization is enabled, manual save functionality is provided for users who prefer explicit control over when their changes are committed to the database. 
         
         The system can also be extended to include auto-save at regular intervals or when the editor is idle.
 
-    ## Undo/Redo Functionality
+  ## Undo/Redo Functionality
         By leveraging Quill's history module or custom undo stacks, the application offers undo/redo options for better text editing control, enhancing the user experience.
 
-    ## PDF Export
+  ## PDF Export
         The content of a document can be exported as a PDF file. This feature is particularly useful for printing or offline sharing. 
         
         Libraries like html-pdf, jsPDF, or pdf-lib can be used to convert the HTML or delta content of the editor into a well-formatted PDF.
 
-    ## Dark Mode
+  ## Dark Mode
         A dark/light theme toggle improves accessibility and user preference handling. It’s implemented using CSS variables or styled-components that respond to user input or system settings.
