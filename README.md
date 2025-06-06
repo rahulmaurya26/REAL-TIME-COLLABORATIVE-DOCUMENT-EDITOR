@@ -71,3 +71,24 @@
 
   ## Dark Mode
         A dark/light theme toggle improves accessibility and user preference handling. It’s implemented using CSS variables or styled-components that respond to user input or system settings.
+
+  # System Architecture
+  ## Frontend (React.js + Quill.js)
+      Handles the user interface, text editing, document list, and toolbar features. Manages WebSocket connections for real-time updates.
+
+  ## Backend (Node.js + Express)
+      Provides RESTful API routes for document CRUD (Create, Read, Update, Delete) operations. Handles WebSocket connections and broadcasts changes to all connected clients.
+
+  ## Database (MongoDB)
+      Stores each document’s unique ID, content (as Quill Delta format), metadata (title, tags, timestamps), and version history if needed.
+
+  ## WebSocket Server (Socket.IO)
+      Manages rooms for each document, listens for change events, and broadcasts updates to other users in the same document session.
+      
+  # Collaboration Model
+      Every document is identified by a UUID (Universally Unique Identifier). 
+      
+      When a user opens a document, their client joins a WebSocket room based on this UUID. When changes are made to the document, the delta (difference) is emitted to the server and then to all other clients.
+      
+      This model ensures minimal data transfer and efficient synchronization.
+
