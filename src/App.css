@@ -1,0 +1,15 @@
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark-mode .ql-toolbar {
+  background: #2c2c2c;
+  border-color: #444;
+}
+
+.dark-mode .ql-container {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}
