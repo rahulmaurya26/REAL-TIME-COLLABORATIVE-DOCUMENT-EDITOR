@@ -85,13 +85,14 @@
   ## WebSocket Server (Socket.IO)
       Manages rooms for each document, listens for change events, and broadcasts updates to other users in the same document session.
       
-  # Collaboration Model
+# Collaboration Model
       Every document is identified by a UUID (Universally Unique Identifier). 
       
       When a user opens a document, their client joins a WebSocket room based on this UUID. When changes are made to the document, the delta (difference) is emitted to the server and then to all other clients.
       
       This model ensures minimal data transfer and efficient synchronization.
-  # Security and Scalability
+      
+# Security and Scalability
      Security is critical in collaborative tools. Authentication and authorization mechanisms (e.g., JWT-based login) can be integrated to restrict document access. 
      
      Input sanitization is essential to prevent XSS (Cross-Site Scripting) attacks through rich-text content.
@@ -103,7 +104,7 @@
         MongoDB’s sharding supports large-scale data handling.
 
         Frontend components are lazy-loaded to reduce initial load time
-  # Conclusion
+# Conclusion
      The collaborative text editor designed in this project provides a functional, modular, and extensible platform for rich-text editing and real-time collaboration.
      
      By drawing inspiration from Google Docs, the system brings essential productivity features to a customizable web application, leveraging modern web technologies. 
