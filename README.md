@@ -112,3 +112,6 @@
      This tool is not only a demonstration of technical proficiency but also a practical solution for teams and individuals who require a lightweight, self-hosted document collaboration system
  
 
+# Output
+
+![Image](https://github.com/user-attachments/assets/d3510235-2787-49ba-bcbb-f7b561a49f4a)
