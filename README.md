@@ -113,8 +113,16 @@
  
 
 # Output
+## Frontend 
 
 ![Image](https://github.com/user-attachments/assets/d3510235-2787-49ba-bcbb-f7b561a49f4a)
 
 
 ![Image](https://github.com/user-attachments/assets/f22903a3-35eb-421b-a8cb-f5769b4cb20d)
+
+
+![Image](https://github.com/user-attachments/assets/3e1c9a7d-cb24-42c3-a1a5-c7a7a4f7a261)
+
+## Backend with MongoDB
+
+
